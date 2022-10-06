@@ -1,6 +1,6 @@
 import { useDispatch } from 'react-redux';
 import { deleteContact } from 'redux/operations';
-import { ItemStyled, ContactStyled } from './ConactItem.styled';
+import { ItemStyled, ContactStyled } from './ContactItem.styled';
 
 const ContactItem = function ({ contact }) {
   const dispatch = useDispatch();

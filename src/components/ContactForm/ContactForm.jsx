@@ -7,6 +7,7 @@ import {
     Label,
     Input,
     ErrorMessageStiled,
+    Button,
 } from './ContactForm.styled';
 
 const schema = yup.object().shape({
@@ -41,13 +42,13 @@ const ContactForm = function () {
           <Label>
             Number
             <br />
-            <Input type="tel" name="number" placeholder="+380..." />
+            <Input type="tel" name="number" placeholder="12-34-567" />
             <ErrorMessageStiled name="number" component="div" />
           </Label>
           <br />
-          <button type="submit" name="addContact">
+          <Button type="submit" name="addContact">
             Add contact
-          </button>
+          </Button>
         </Form>
       </Formik>
     </FormPlateStyled>
